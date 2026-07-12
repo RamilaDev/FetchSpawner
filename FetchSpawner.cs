@@ -68,13 +68,6 @@ namespace Ramila
         /// Creates the singleton instance if one does not already exist.
         ///
         /// If an instance already exists, it is returned immediately.
-        ///
-        /// Workflow:
-        /// 1. Store initialization data.
-        /// 2. Obtain the prefab.
-        /// 3. Instantiate it.
-        /// 4. Call OnFetch().
-        ///
         /// </summary>
         /// <param name="s">
         /// Initialization data passed to the new instance.
@@ -117,9 +110,6 @@ namespace Ramila
         ///
         /// This is useful when multiple prefab variants exist and each one
         /// should be able to spawn itself independently.
-        ///
-        /// This method is non-static because it needs a concrete prefab
-        /// already placed in the scene or referenced elsewhere.
         /// </summary>
         /// <param name="s">
         /// Initialization data.
