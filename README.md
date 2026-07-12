@@ -55,12 +55,12 @@ This script must be attached to the root GameObject of the prefab.
 Once it's set up, it can be accessed from other scripts as follows:
 
 ```
-PopUpBox.Fetch(new PopUp("You obtained a sword!"));
+PopUpBox.Fetch(new PopUpBox.Data("You obtained a sword!"));
 ```
 → The prefab is instantiated and displays the message "You obtained a sword!".
 
 ```
-PopUpBox.Fetch(new PopUp("Connection error"));
+PopUpBox.Fetch(new PopUpBox.Data("Connection error"));
 ```
 → The prefab is instantiated and displays the message "Connection error".
 
