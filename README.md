@@ -37,7 +37,7 @@ public class PopUpBox : FetchSpawner<PopUpBox, PopUpBox.Data>
     void Update
     {
         float s = Mathf.Sin(Time.time);
-        TextMeshPro.color = new Cclor(s * 0.3, s * 0.3, s * 0.3)
+        TextMeshPro.color = new Color(s * 0.3, s * 0.3, s * 0.3)
     }
 
     public override GameObject GetMyPrefab()
